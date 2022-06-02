@@ -27,10 +27,10 @@ public class controller {
             @Override
             public void actionPerformed(ActionEvent ae) {
                 String Judul = transView.getJudul();
-                int Alur = transView.getAlur();
-                int Penokohan = transView.getPenokohan();
-                int Akting = transView.getAkting();
-                int Nilai = (Alur+Penokohan+Akting)/3;
+                double Alur = Double.parseDouble(transView.getAlur());
+                double Penokohan = Double.parseDouble(transView.getPenokohan());
+                double Akting = Double.parseDouble(transView.getAkting());
+                double Nilai = (Alur+Penokohan+Akting)/3;
 
                 if(Judul.isEmpty() || Alur==0 || Penokohan==0 || Akting==0 || Nilai==0){
                     JOptionPane.showMessageDialog(null, "Tidak Boleh Kosong");
@@ -62,10 +62,10 @@ public class controller {
             public void actionPerformed(ActionEvent ae) {
 
                 String Judul = transView.getJudul();
-                int Alur = transView.getAlur();
-                int Penokohan = transView.getPenokohan();
-                int Akting = transView.getAkting();
-                int Nilai = (Alur+Penokohan+Akting)/3;
+                double Alur = Double.parseDouble(transView.getAlur());
+                double Penokohan = Double.parseDouble(transView.getPenokohan());
+                double Akting = Double.parseDouble(transView.getAkting());
+                double Nilai = (Alur+Penokohan+Akting)/3;
                 if(Judul.isEmpty() || Alur==0 || Penokohan==0 || Akting==0 || Nilai==0){
                     JOptionPane.showMessageDialog(null, "Tidak Boleh Kosong");
                 }
