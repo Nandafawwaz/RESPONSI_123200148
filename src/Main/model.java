@@ -33,10 +33,10 @@ public class model {
             ResultSet resultSet = statement.executeQuery(query);
             while (resultSet.next()){
                 data[jmlData][0] = resultSet.getString("Judul"); //harus sesuai nama kolom di mysql
-                data[jmlData][1] = String.valueOf(resultSet.getInt("Alur"));
-                data[jmlData][2] = String.valueOf(resultSet.getInt("Penokohan"));
-                data[jmlData][3] = String.valueOf(resultSet.getInt("Akting"));
-                data[jmlData][4] = String.valueOf(resultSet.getInt("Nilai"));
+                data[jmlData][1] = resultSet.getString("Alur");
+                data[jmlData][2] = resultSet.getString("Penokohan");
+                data[jmlData][3] = resultSet.getString("Akting");
+                data[jmlData][4] = resultSet.getString("Nilai");
                 jmlData++;
             }
             return data;
