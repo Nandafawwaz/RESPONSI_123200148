@@ -76,30 +76,12 @@ public class view extends JFrame {
         public String getJudul(){ return tfjudul.getText();
         }
 
-        public int getAlur(){
-            if(tfalur.getText().isEmpty()) {
-                int al = 0;
-                return al;
-            }
-            else return Integer.parseInt(tfalur.getText());
+        public String getAlur(){ return tfalur.getText();
         }
 
-        public int getPenokohan(){
-            if(tfpenokohan.getText().isEmpty()){
-                int pe = 0;
-                return pe;
-             }
-            else return Integer.parseInt(tfpenokohan.getText());
+        public String getPenokohan(){ return tfpenokohan.getText();
         }
 
-        public int getAkting(){
-            if(tfakting.getText().isEmpty()){
-                int ak = 0;
-                return ak;
-            }
-            else{
-                return Integer.parseInt(tfakting.getText());
-            }
-
-        }
+        public String getAkting(){ return tfakting.getText();
+     }
 }
